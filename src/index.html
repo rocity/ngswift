@@ -2,10 +2,21 @@
 <html>
 <head>
     <title>Angular Swift</title>
-    <script type="text/javascript" src="../lib/angular/angular.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
-<body ng-app>
-    Enter your name: <input type="text" ng-model="name" />
-    <p>Hello {{ name }}!</p>
+<body ng-app="ngswift">
+    <div class="container">
+        <div ng-controller="NgSwiftController">
+            <button ng-click="toggle()" class="btn btn-primary">Toggle</button>
+            <p ng-show="visible">Hello world!</p>
+        </div>
+    </div>
 </body>
 </html>
