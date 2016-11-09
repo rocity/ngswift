@@ -13,10 +13,8 @@
 </head>
 <body ng-app="ngswift">
     <div class="container">
-        <div ng-controller="NgSwiftController">
-            <button ng-click="toggle()" class="btn btn-primary">Toggle</button>
-            <p ng-show="visible">Hello world!</p>
-        </div>
+        Enter your name: <input class="form-control" ng-model="name" />
+        <p>Hello {{ name | uppercase }}</p>
     </div>
 </body>
 </html>
