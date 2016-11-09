@@ -13,8 +13,12 @@
 </head>
 <body ng-app="ngswift">
     <div class="container">
-        Enter your name: <input class="form-control" ng-model="name" />
-        <p>Hello {{ name | uppercase }}</p>
+        <label for="checkbox">
+            <input id="checkbox" type="checkbox" ng-model="visible" />
+        </label>
+        <div show="visible">
+            <p>Hello world!</p>
+        </div>
     </div>
 </body>
 </html>
