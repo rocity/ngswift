@@ -12,13 +12,11 @@
     <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body ng-app="ngswift">
-    <div class="container">
-        <label for="checkbox">
-            <input id="checkbox" type="checkbox" ng-model="visible" />
-        </label>
-        <div show="visible">
-            <p>Hello world!</p>
-        </div>
+    <div
+        class="container"
+        ng-controller="remoteControl"
+        >
+        <p>{{ value }}</p>
     </div>
 </body>
 </html>
